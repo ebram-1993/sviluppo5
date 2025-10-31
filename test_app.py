@@ -1,3 +1,8 @@
+from fastapi.testclient import TestClient
+from app import app  # Import your FastAPI app
+
+# ✅ Create a test client
+client = TestClient(app)
 
 def test_get_fruits_empty():
     response = client.get("/fruits")
