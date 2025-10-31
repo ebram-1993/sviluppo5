@@ -3,6 +3,6 @@ uvicorn
 pytest
 requests
 
-
+httpx
 
 
